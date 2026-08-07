@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AMA - Công ty Cổ phần Kiến Thiết</title>
+    
+    <!-- External Scripts & Fonts -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        corporate: {
+                            blue: '#0F2C59',
+                            green: '#00A651',
+                            orange: '#F97300',
+                            light: '#F8F9FA'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-sans text-gray-800 bg-white">
+
+    <!-- Header -->
+    <header class="fixed w-full z-50 glass-nav shadow-sm border-b border-gray-100 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col sm:flex-row justify-between items-center min-h-[5rem] py-3 gap-3">
+                <div class="flex items-center gap-2">
+                    <a href="/" class="flex items-center">
+                        <img src="https://amaconts.vn/wp-content/uploads/2026/05/logo-ama-110.png" alt="AMA Logo" class="h-14 w-auto object-contain">
+                    </a>
+                </div>
+                <nav class="flex flex-wrap justify-center gap-x-6 gap-y-1 text-sm md:text-base">
+                    <a href="#" class="text-corporate-blue font-semibold hover:text-corporate-green transition">Trang chủ</a>
+                    <a href="#services" class="text-gray-600 font-medium hover:text-corporate-green transition">Dịch vụ</a>
+                    <a href="#projects" class="text-gray-600 font-medium hover:text-corporate-green transition">Dự án</a>
+                    <a href="#news" class="text-gray-600 font-medium hover:text-corporate-green transition">Tin tức</a>
+                    <a href="#contact" class="text-gray-600 font-medium hover:text-corporate-green transition">Liên hệ</a>
+                </nav>
+                <div>
+                    <a href="#contact" class="bg-corporate-orange hover:bg-orange-600 text-white px-6 py-2.5 rounded-full font-semibold transition shadow-lg shadow-orange-500/30">
+                        Nhận báo giá
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative h-screen flex items-center justify-center">
+        <div class="absolute inset-0 z-0">
+            <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=2000&auto=format&fit=crop" class="w-full h-full object-cover" alt="Architecture Background">
+            <div class="absolute inset-0 bg-gradient-to-r from-corporate-blue/90 to-corporate-blue/40"></div>
+        </div>
+        
+        <div class="relative z-10 text-center px-4 max-w-4xl mx-auto mt-16">
+            <h1 class="text-5xl md:text-7xl font-extrabold text-white mb-6 tracking-tight">
+                <span class="block mb-3 md:mb-5">Kiến tạo Không gian,</span>
+                <span class="block text-corporate-green">Nâng tầm Thương hiệu.</span>
+            </h1>
+            <p class="text-lg md:text-xl text-gray-200 mb-10 max-w-2xl mx-auto font-light">
+                Kiến trúc cao cấp, tổ chức sự kiện và thi công quảng cáo chất lượng cao. Chúng tôi biến những tầm nhìn táo bạo nhất của bạn thành hiện thực với sự chính xác và đổi mới.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="#projects" class="bg-corporate-orange hover:bg-orange-600 text-white px-8 py-4 rounded-full font-bold text-lg transition shadow-xl shadow-orange-500/20">Khám phá Dự án</a>
+                <a href="#contact" class="bg-transparent border-2 border-white text-white hover:bg-white hover:text-corporate-blue px-8 py-4 rounded-full font-bold text-lg transition">Liên hệ</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="py-24 bg-corporate-light">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+                <div class="relative">
+                    <div class="absolute inset-0 bg-corporate-green transform translate-x-4 translate-y-4 rounded-2xl opacity-20"></div>
+                    <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?q=80&w=800&auto=format&fit=crop" alt="AMA Factory" class="relative rounded-2xl shadow-2xl object-cover h-96 w-full z-10 border-4 border-white">
+                </div>
+                <div>
+                    <h4 class="text-corporate-green font-bold tracking-wider uppercase text-sm mb-2">Về chúng tôi</h4>
+                    <h2 class="text-4xl font-bold text-corporate-blue mb-6">Xây dựng Sự Xuất sắc, <br>Trao gửi Niềm tin.</h2>
+                    <p class="text-gray-600 mb-6 text-lg leading-relaxed">
+                        Với nhiều năm kinh nghiệm trong thiết kế cảnh quan, thi công quảng cáo và tổ chức sự kiện, AMA là đối tác hàng đầu của bạn về chất lượng kết cấu và thẩm mỹ.
+                    </p>
+                    <p class="text-gray-600 mb-8 leading-relaxed">
+                        Cơ sở vật chất hiện đại được trang bị máy móc CNC và laser tiên tiến của chúng tôi đảm bảo mọi dự án đều được thực hiện với độ chính xác và chất lượng hoàn hảo.
+                    </p>
+                    <div class="flex items-center gap-4">
+                        <div class="flex flex-col">
+                            <span class="text-3xl font-black text-corporate-blue count-up" data-target="15">0+</span>
+                            <span class="text-sm text-gray-500 font-medium">Năm kinh nghiệm</span>
+                        </div>
+                        <div class="h-10 w-px bg-gray-300"></div>
+                        <div class="flex flex-col">
+                            <span class="text-3xl font-black text-corporate-blue count-up" data-target="500">0+</span>
+                            <span class="text-sm text-gray-500 font-medium">Dự án hoàn thành</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h4 class="text-corporate-green font-bold tracking-wider uppercase text-sm mb-2">Chuyên môn của chúng tôi</h4>
+                <h2 class="text-4xl font-bold text-corporate-blue">Dịch vụ Toàn diện</h2>
+                <div class="w-24 h-1 bg-corporate-orange mx-auto mt-6 rounded-full"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6">
+                <div class="service-card bg-white p-6 rounded-2xl border border-gray-100 shadow-lg cursor-pointer flex flex-col justify-between">
+                    <div>
+                        <div class="w-14 h-14 bg-blue-50 rounded-xl flex items-center justify-center mb-6 text-corporate-blue icon-glow">
+                            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5.882V19.24a1.76 1.76 0 01-3.417.592l-2.147-6.15M18 13a3 3 0 100-6M5.436 13.683A2.001 2.001 0 013 12c0-.882.576-1.63 1.383-1.897l7.85-2.617A2 2 0 0115 9.382V14.618a2 2 0 01-2.767 1.897l-6.797-2.832z"></path></svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-corporate-blue mb-3">Quảng cáo & Truyền thông</h3>
+                        <p class="text-gray-500 text-sm leading-relaxed">Tư vấn, thiết kế và triển khai các giải pháp truyền thông, quảng cáo toàn diện giúp nâng tầm nhận diện thương hiệu và thu hút khách hàng.</p>
+                    </div>
+                </div>
+
+                <div class="service-card bg-white p-6 rounded-2xl border border-gray-100 shadow-lg cursor-pointer flex flex-col justify-between">
+                    <div>
+                        <div class="w-14 h-14 bg-blue-50 rounded-xl flex items-center justify-center mb-6 text-corporate-blue icon-glow">
+                            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path></svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-corporate-blue mb-3">Thiết kế & Sản xuất Nội thất</h3>
+                        <p class="text-gray-500 text-sm leading-relaxed">Tư vấn thiết kế và sản xuất nội thất trọn gói, tối ưu hóa công năng và nâng cao giá trị thẩm mỹ cho mọi không gian sống và làm việc.</p>
+                    </div>
+                </div>
+
+                <div class="service-card bg-white p-6 rounded-2xl border border-gray-100 shadow-lg cursor-pointer flex flex-col justify-between">
+                    <div>
+                        <div class="w-14 h-14 bg-blue-50 rounded-xl flex items-center justify-center mb-6 text-corporate-blue icon-glow">
+                            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"></path></svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-corporate-blue mb-3">Thiết kế & Thi công Cảnh quan</h3>
+                        <p class="text-gray-500 text-sm leading-relaxed">Tư vấn và thi công cảnh quan xanh, mang đến không gian sống động, hài hòa giữa kiến trúc hiện đại và yếu tố thiên nhiên.</p>
+                    </div>
+                </div>
+
+                <div class="service-card bg-white p-6 rounded-2xl border border-gray-100 shadow-lg cursor-pointer flex flex-col justify-between">
+                    <div>
+                        <div class="w-14 h-14 bg-blue-50 rounded-xl flex items-center justify-center mb-6 text-corporate-blue icon-glow">
+                            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path></svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-corporate-blue mb-3">Tư vấn & Thi công Xây dựng</h3>
+                        <p class="text-gray-500 text-sm leading-relaxed">Cung cấp giải pháp tư vấn thiết kế và thi công xây dựng trọn gói, đảm bảo chất lượng công trình, độ an toàn và tiến độ tối ưu.</p>
+                    </div>
+                </div>
+
+                <div class="service-card bg-white p-6 rounded-2xl border border-gray-100 shadow-lg cursor-pointer flex flex-col justify-between">
+                    <div>
+                        <div class="w-14 h-14 bg-blue-50 rounded-xl flex items-center justify-center mb-6 text-corporate-blue icon-glow">
+                            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-corporate-blue mb-3">Cung cấp & Lắp đặt Thiết bị</h3>
+                        <p class="text-gray-500 text-sm leading-relaxed">Cung cấp và lắp đặt trọn gói hệ thống âm thanh, ánh sáng, màn hình LED, LED trang trí và các thiết bị văn phòng hiện đại.</p>
+                    </div>
+                </div>
+
+                <div class="flex justify-center items-center mt-12 col-span-full">
+                    <a href="#" class="inline-flex items-center gap-3 text-corporate-orange hover:text-orange-600 font-extrabold text-xl md:text-2xl group transition-all duration-300 hover:scale-105">
+                        <span>Xem thêm...</span>
+                        <svg class="w-6 h-6 md:w-7 md:h-7 transition-transform duration-300 group-hover:translate-x-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Factory & Facilities Gallery -->
+    <section class="py-24 bg-gray-900 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-end mb-12">
+                <div>
+                    <h4 class="text-corporate-green font-bold tracking-wider uppercase text-sm mb-2">Cơ sở vật chất</h4>
+                    <h2 class="text-4xl font-bold">Xưởng sản xuất Hiện đại</h2>
+                </div>
+                <a href="#" class="text-corporate-orange hover:text-white transition font-semibold mt-4 md:mt-0 flex items-center gap-2">
+                    Xem Toàn bộ Thư viện ảnh <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+                </a>
+            </div>
+
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                <div class="col-span-2 row-span-2">
+                    <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?q=80&w=800&auto=format&fit=crop" class="w-full h-full object-cover rounded-xl shadow-lg hover:opacity-90 transition duration-300" alt="CNC Machine" loading="lazy">
+                </div>
+                <div>
+                    <img src="https://images.unsplash.com/photo-1666634157070-6fd830fb5672?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="w-full h-48 object-cover rounded-xl shadow-lg hover:opacity-90 transition duration-300" alt="Workshop" loading="lazy">
+                </div>
+                <div>
+                    <img src="https://images.unsplash.com/photo-1711418235334-8895331a6cf9?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="w-full h-48 object-cover rounded-xl shadow-lg hover:opacity-90 transition duration-300" alt="Laser Cutting" loading="lazy">
+                </div>
+                <div class="col-span-2 md:col-span-2">
+                    <img src="https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?q=80&w=800&auto=format&fit=crop" class="w-full h-48 object-cover rounded-xl shadow-lg hover:opacity-90 transition duration-300" alt="Construction Materials" loading="lazy">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trusted Partners Ticker -->
+    <section class="py-16 bg-white border-b border-gray-100 overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-8 text-center">
+            <h3 class="text-sm font-bold text-gray-400 uppercase tracking-widest">Đối tác tin cậy của các Doanh nghiệp hàng đầu</h3>
+        </div>
+        <div class="ticker-wrap w-full">
+            <div class="ticker">
+                <div class="ticker-item"><span class="text-2xl font-black text-gray-300 hover:text-blue-600 transition duration-300 cursor-default grayscale hover:grayscale-0">LUGANO</span></div>
+                <div class="ticker-item"><span class="text-2xl font-black text-gray-300 hover:text-red-600 transition duration-300 cursor-default grayscale hover:grayscale-0">VietinBank</span></div>
+                <div class="ticker-item"><span class="text-2xl font-black text-gray-300 hover:text-teal-600 transition duration-300 cursor-default grayscale hover:grayscale-0">Viettel</span></div>
+                <div class="ticker-item"><span class="text-2xl font-black text-gray-300 hover:text-yellow-600 transition duration-300 cursor-default grayscale hover:grayscale-0">Quoc Te</span></div>
+                <div class="ticker-item"><span class="text-2xl font-black text-gray-300 hover:text-orange-500 transition duration-300 cursor-default grayscale hover:grayscale-0">Cam Ranh</span></div>
+                <div class="ticker-item"><span class="text-2xl font-black text-gray-300 hover:text-blue-800 transition duration-300 cursor-default grayscale hover:grayscale-0">VNPT</span></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact" class="bg-corporate-blue text-gray-300 pt-20 pb-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+                <div>
+                    <div class="flex items-center gap-3 mb-6">
+                        <div class="bg-white px-3 py-2 rounded">
+                            <img src="https://amaconts.vn/wp-content/uploads/2026/05/logo-ama-110.png" alt="AMA Logo" class="h-14 w-auto">
+                        </div>
+                        <div class="bg-white px-3 py-2 rounded">
+                            <img src="https://amaconts.vn/wp-content/uploads/2026/05/logo-dong-an-nho.png" alt="AMA Logo" class="h-14 w-auto">
+                        </div>
+                    </div>
+                    <p class="text-sm leading-relaxed mb-6">
+                        Công ty Cổ phần Kiến Thiết AMA cung cấp các giải pháp cao cấp về kiến trúc, thi công quảng cáo và tổ chức sự kiện trên toàn Việt Nam.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="https://facebook.com/quangcaonhatrang" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-corporate-orange transition">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/b/b9/2023_Facebook_icon.svg" alt="Facebook" class="w-5 h-5 object-contain">
+                        </a>
+                        <a href="https://www.youtube.com/@Qu%E1%BA%A3ngC%C3%A1o%C4%90%E1%BB%93ngAn" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-corporate-orange transition">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/0/09/YouTube_full-color_icon_%282017%29.svg" alt="YouTube" class="w-5 h-5 object-contain">
+                        </a>
+                        <a href="https://zalo.me/0911353668" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-corporate-orange transition">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Icon_of_Zalo.svg" alt="Zalo" class="w-5 h-5 object-contain">
+                        </a>
+                    </div>
+                </div>
+
+                <div>
+                    <h4 class="text-white font-bold mb-6 uppercase tracking-wider text-sm">Liên kết nhanh</h4>
+                    <ul class="space-y-3 text-sm">
+                        <li><a href="#" class="hover:text-corporate-orange transition">Về chúng tôi</a></li>
+                        <li><a href="#" class="hover:text-corporate-orange transition">Dịch vụ của chúng tôi</a></li>
+                        <li><a href="#" class="hover:text-corporate-orange transition">Hồ sơ Dự án</a></li>
+                        <li><a href="#" class="hover:text-corporate-orange transition">Tin tức Công ty</a></li>
+                        <li><a href="#" class="hover:text-corporate-orange transition">Hỗ trợ Liên hệ</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-white font-bold mb-6 uppercase tracking-wider text-sm leading-relaxed">Công ty Cổ phần Kiến Thiết AMA</h4>
+                    <ul class="space-y-4 text-sm">
+                        <li class="flex items-start gap-3">
+                            <svg class="w-5 h-5 text-corporate-green shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+                            <span><strong>Văn phòng:</strong> 968 ĐƯỜNG 2/4, P.Bắc Nha Trang</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <svg class="w-5 h-5 text-corporate-green shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+                            <span><strong>Xưởng gia công:</strong> Thôn Đồng Bé, Xã Diên Thọ, Diên Khánh, T. Khánh Hòa</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <svg class="w-5 h-5 text-corporate-green shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
+                            <a href="https://zalo.me/0911353668" target="_blank" rel="noopener noreferrer" class="hover:text-corporate-orange transition">0911 353 668</a>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <svg class="w-5 h-5 text-corporate-green shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                            <span>kienthietama@gmail.com</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-white font-bold mb-6 uppercase tracking-wider text-sm leading-relaxed">C.TY TNHH Truyền Thông Quảng Cáo Đồng An</h4>
+                    <ul class="space-y-4 text-sm">
+                        <li class="flex items-start gap-3">
+                            <svg class="w-5 h-5 text-corporate-green shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+                            <span><strong>Văn phòng:</strong> Lô 93/LK 5-13, Khu đô thị Thái Hưng, P.Nam Nha Trang</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <svg class="w-5 h-5 text-corporate-green shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
+                            <span><strong>Hotline:</strong> <a href="https://zalo.me/0918249789" target="_blank" rel="noopener noreferrer" class="hover:text-corporate-orange transition">0918 249 789</a></span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating Contact Button -->
+    <a href="https://zalo.me/0911353668" target="_blank" rel="noopener noreferrer" 
+       class="fixed bottom-6 right-6 z-50 flex items-center justify-center w-14 h-14 rounded-full shadow-2xl hover:scale-110 transition-transform duration-300 group"
+       title="Tư vấn Zalo ngay">
+        <span class="absolute -inset-1.5 rounded-full bg-gradient-to-tr from-blue-600 to-cyan-400 opacity-75 animate-ping"></span>
+        <span class="relative flex items-center justify-center w-full h-full bg-gradient-to-tr from-blue-600 via-blue-500 to-cyan-400 rounded-full p-2.5 shadow-lg border border-white/30">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Icon_of_Zalo.svg" alt="Zalo Chat" class="w-full h-full object-contain drop-shadow">
+        </span>
+        <span class="absolute right-16 bg-gray-900 text-white text-xs font-semibold px-3 py-1.5 rounded-lg shadow-xl whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">
+            Chat Zalo ngay!
+        </span>
+    </a>
+
+    <!-- External Script -->
+    <script src="js/main.js" defer></script>
+</body>
+</html>
